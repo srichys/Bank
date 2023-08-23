@@ -6,4 +6,4 @@ after installation create jenkin server: manage jenkins->system-> find publish o
 user and password then save and apply<br>
 create build job-> enter git url of project-> build trigger(select github hook trigger.should have created webhook under project)->buildsteps
 (select send files execute command over ssh)-> enter server name as jenkins(created in above step)->add in exec command as 
-rsync -avh /var/lib/jenkins/workspace/bankjob/index.html root@<pvt ip of webserver>:/var/www/htm
+rsync -avh /var/lib/jenkins/workspace/bankjob/index.html root@&lt;pvt ip of webserver&gt;:/var/www/htm
